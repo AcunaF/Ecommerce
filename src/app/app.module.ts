@@ -15,6 +15,7 @@ import { StockComponent } from './components/stock/stock.component';
 import { StockListingComponent } from './components/stock-listing/stock-listing.component';
 import { CoroucelComponent } from './components/coroucel/coroucel.component';
 import { SwiperModule } from 'swiper/angular';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SwiperModule } from 'swiper/angular';
     BrowserModule,
     AppRoutingModule,
     SwiperModule,
+    ReactiveFormsModule,
 
     AuthModule.forRoot({
       domain: 'dev-ytdgzjci0gdqzhyl.us.auth0.com',
