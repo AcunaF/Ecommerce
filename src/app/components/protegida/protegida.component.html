@@ -1,0 +1,11 @@
+<br>
+<h1 class="">Perfil del Usuario</h1>
+
+<pre *ngIf="auth.userProfile$ |async as profile">
+    <code>{{profile | json}}</code>
+</pre>
+
+<!--
+esperar a que el obserbable (userProfile$) responda,
+ viene con el perfil del usuairo por eso usa el async y toda esa respuesta esta asignada al profile
+el profile es el producto del obserbable-->

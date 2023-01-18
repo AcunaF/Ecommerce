@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10;
+    margin-bottom: 10px;
+}
+
+body{
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

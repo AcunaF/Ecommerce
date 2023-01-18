@@ -1,0 +1,96 @@
+<br>
+<div class="overflow-x-auto relative m-5 p-5 border border-gray-600 w-3/4  ">
+    <span class="title"> Product List</span>
+
+    <table class=" mt-5 w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="py-3 px-6">
+                    Product name
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Price
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Description
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Category
+                </th>
+
+                <th scope="col" class="py-3 px-6">
+                    Image
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Quantity
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Delete/Edit
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr *ngFor="let producto of listProductos" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">-->
+            <tr>
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <!--   {{producto.name}}-->
+                </th>
+                <td class="py-4 px-6">
+                    <!--{{producto.price |currency :'USD' }}-->
+                </td>
+                <td class="py-4 px-6">
+                    <!-- {{producto.description}}-->
+                </td>
+                <td class="py-4 px-6">
+                    <!--  {{producto.category}}-->
+                </td>
+                <td class="py-4 px-6">
+                    <!-- n/N-->
+                </td>
+                <td class="py-4 px-6">
+                    <!--   {{producto.quantity}}-->
+                </td>
+                <td class="boton py-4 px-6">
+                    <i class="fa-solid fa-trash ml-5"></i>
+                    <i class="fa-solid fa-pen-to-square ml-5"></i>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Microsoft Surface Pro
+                </th>
+                <td class="py-4 px-6">
+                    White
+                </td>
+                <td class="py-4 px-6">
+                    Laptop PC
+                </td>
+                <td class="py-4 px-6">
+                    Laptop
+                </td>
+                <td class="py-4 px-6">
+                    N
+                </td>
+                <td class="py-4 px-6">
+                    9
+                </td>
+                <td class="boton py-4 px-6">
+                    <i class=" fa-solid fa-trash ml-5"></i>
+                    <i class=" fa-solid fa-pen-to-square ml-5"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button type="button" class="text-blue-700 hover:text-white border border-blue-700
+     hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium 
+     rounded-lg text-sm px-5 py-2.5 mt-5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 
+     dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800" routerLink="/createProducts">Add</button>
+</div>
+
+<!--<table *ngIf =" listProductoos.length > 0"
+<h1 *ngif=" listProductos.length == 0" class="text-blue-700 border-gray-700 "> No hay productos para mostrar</h1>
+
+
+
+-->
