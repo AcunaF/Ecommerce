@@ -16,6 +16,8 @@ import { StockListingComponent } from './components/stock-listing/stock-listing.
 import { CoroucelComponent } from './components/coroucel/coroucel.component';
 import { SwiperModule } from 'swiper/angular';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
+import { PromotionsComponent } from './components/promotions/promotions.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 
     StockListingComponent,
     CoroucelComponent,
+    FooterComponent,
+    PromotionsComponent,
   ],
   imports: [
     BrowserModule,
