@@ -3,14 +3,16 @@
 
     <h2 class="mb-6 font-mediumuj">Agregar producto</h2>
     <form [formGroup]="productForm" (ngSubmit)="addProduct()">
-
         <div class="relative z-0 mb-6 w-full group">
             <input formControlName="product" type="text" name="product" id="" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2
                  border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500
                   focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
-            <p class="oculto peer-invalid:visible text-red-700 font-light">
-                Please enter your product name
-            </p>
+
+            <div *ngIf="productForm.get('product')?.hasError('required') && productForm.get('product')?.touched ">
+                <p class="oculto peer-invalid:visible text-red-700 font-light">
+                    Please enter your product name
+                </p>
+            </div>
             <label for="floating_email" class="peer-focus:font-medium absolute
                 text-sm text-gray-500 dark:text-gray-400 duration-300
                 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
@@ -22,9 +24,12 @@
             <input formControlName="price" type="number" name="Price" id="" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2
                  border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500
                   focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
-            <p class="invisible peer-invalid:visible text-red-700 font-light">
-                Please enter product price
-            </p>
+
+            <div *ngIf="productForm.get('price')?.hasError('required') && productForm.get('product')?.touched ">
+                <p class="oculto peer-invalid:visible text-red-700 font-light">
+                    Please enter your product price
+                </p>
+            </div>
             <label for="floating_email" class="peer-focus:font-medium absolute
                 text-sm text-gray-500 dark:text-gray-400 duration-300
                 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
@@ -37,9 +42,11 @@
                  border-0 border-b-2 border-gray-300 appearance-none dark:text-white
                  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none
                  focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
-            <p class="invisible peer-invalid:visible text-red-700 font-light">
-                Please enter product category
-            </p>
+            <div *ngIf="productForm.get('category')?.hasError('required') && productForm.get('product')?.touched ">
+                <p class="oculto peer-invalid:visible text-red-700 font-light">
+                    Please enter your product category
+                </p>
+            </div>
             <label class="peer-focus:font-medium absolute text-sm text-gray-500
                 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75
                 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600
@@ -76,9 +83,11 @@
                     id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300
                       appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0
                       focus:border-blue-600 peer" placeholder=" " required="">
-                <p class="invisible peer-invalid:visible text-red-700 font-light">
-                    Please enter product quantity
-                </p>
+                <div *ngIf="productForm.get('quantity')?.hasError('required') && productForm.get('product')?.touched ">
+                    <p class="oculto peer-invalid:visible text-red-700 font-light">
+                        Please enter your product quantity
+                    </p>
+                </div>
                 <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6
                      scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100
                      peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Quantity

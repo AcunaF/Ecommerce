@@ -19,6 +19,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { PromotionsComponent } from './components/promotions/promotions.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +42,8 @@ import { PromotionsComponent } from './components/promotions/promotions.componen
     AppRoutingModule,
     SwiperModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
 
     AuthModule.forRoot({
       domain: 'dev-ytdgzjci0gdqzhyl.us.auth0.com',
