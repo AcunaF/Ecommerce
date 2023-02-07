@@ -21,6 +21,7 @@ import { PromotionsComponent } from './components/promotions/promotions.componen
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ToastrModule } from 'ngx-toastr';
     CoroucelComponent,
     FooterComponent,
     PromotionsComponent,
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,
